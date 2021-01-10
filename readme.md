@@ -1,7 +1,7 @@
 have to use x64 Native Tools Command Prompt For VS 2019 to actually get the correct compiler and toolset to work with nvcc.
 
 ```
-nvcc -add.cu -o add.dll --shared
+nvcc -add.cu -o addcuda.dll --shared
 ```
 the nvcc toolchain uses cl.exe (MSVSC compiler) and so we needed to mark the header with special export syntax - checkout add.h.
 
